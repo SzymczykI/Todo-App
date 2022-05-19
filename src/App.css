@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center
+}
+
+.main {
+  margin: 1em
+}
+
+.header__title {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.408px;
+    color: #5C9DFE;
+}
+
+@media screen and (min-width: 420px) {
+  .header__title {
+    font-size: 40px;
+  }
+}

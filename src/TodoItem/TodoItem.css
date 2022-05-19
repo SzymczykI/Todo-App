@@ -1,0 +1,92 @@
+.todo
+.todo__button--remove {
+    display: none;
+}
+
+.todo--completed
+.todo__button--remove {
+    display: flex;
+}
+
+.todo {
+    list-style-type: none;
+    margin: 0.5em 0;
+    padding: 1rem;
+    max-width: 450px;
+    background: #f5f6f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.todo:hover {
+    background:#E8EEFF;
+    border-color: #7ea8e7;
+}
+.todo--completed {
+    order: 1;
+    background: #E8EEFF;
+    list-style-type: none;
+    margin: 0.5em 0;
+    padding: 1rem;
+    min-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo--toggle-completed {
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+}
+
+.todo__button--remove {
+    /* width: 30%; */
+    background: #5C9DFE;
+    border: 1px solid #5C9DFE;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.todo__button--remove:hover {
+    background: #7ea8e7;
+    border-color: #7ea8e7;
+}
+
+
+.todo--completed
+.todo__title {
+    color: #9ca2aa;
+    text-decoration: line-through;
+}
+.todo--completed
+.todo__description {
+    color: #9ca2aa;
+    text-decoration: line-through;
+}
+
+.todo__title {
+    margin-bottom: 0;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 25px;
+    letter-spacing: -0.408px;
+    color: #5C9DFE;
+    text-align: left;
+}
+
+.todo__description {
+    margin-top: 0;
+    font-size: 1em;
+    text-align: left;
+    color: #7a7f86;
+    width: 100%;
+    word-wrap: break-word;
+ }
